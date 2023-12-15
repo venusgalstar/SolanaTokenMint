@@ -21,6 +21,9 @@ const WalletContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
     console.log("autoConnect", autoConnect);
     const network = WalletAdapterNetwork.Mainnet;
     const endpoint = useMemo(() => "https://api.metaplex.solana.com");
+    // const endpoint = useMemo(() => clusterApiUrl(network), [network]);
+
+    console.log("clusterApiUrl", clusterApiUrl(network), [network]);
 
     
 
