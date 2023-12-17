@@ -75,7 +75,7 @@ export const UpdateMetadata: FC = () => {
       createSetAuthorityInstruction(
           tokenPublicKey,
           publicKey,
-          AuthorityType.FreezeAccount,
+          AuthorityType.MintTokens,
           null,        
       )
     );
