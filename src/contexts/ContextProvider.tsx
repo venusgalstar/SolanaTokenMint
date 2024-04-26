@@ -20,7 +20,7 @@ const WalletContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
     console.log("WalletAdapterNetwork", WalletAdapterNetwork);
     console.log("autoConnect", autoConnect);
     const network = WalletAdapterNetwork.Devnet;
-    const endpoint = useMemo(() => "https://api.metaplex.solana.com");
+    const endpoint = useMemo(() => "https://mainnet.helius-rpc.com/?api-key=f78a24a1-8af2-449c-af4b-4d9f3ab1ae27");
     // const endpoint = useMemo(() => clusterApiUrl(network), [network]);
 
     console.log("clusterApiUrl", clusterApiUrl(network), [network]);
